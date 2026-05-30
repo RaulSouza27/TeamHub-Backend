@@ -13,7 +13,7 @@ import java.util.Map;
 @RequestMapping("/version")
 public class VersionController {
 
-    @Value("${app.version:unknown}")
+    @Value("${app.version}")
     private String appVersion;
 
     @GetMapping
